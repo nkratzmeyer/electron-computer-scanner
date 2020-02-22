@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 90%;
+  margin: 5px auto;
+  height: 95%;
+  background: #444;
+  color: #eee;
+}
+
+hr {
+  margin: 5px 0;
+}
+
+p {
+  white-space: pre;
+}
+
+.name {
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+input {
+  padding: 4px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 20px;
+}
+
+input[type="password"]{
+  color: black;
+}
+
+button {
+  padding: 4px 10px;
+  border: 1px solid lightgrey;
+  background: dodgerblue;
+  color: white;
+  font-size: 20px;
+}

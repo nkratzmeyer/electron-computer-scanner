@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/details.css">
+    <title>Computer Details</title>
+</head>
+
+<body>
+    <header id="computer-details">
+
+    </header>
+    <hr>
+    <button id="remote-assist">Remote Assist</button>
+    <button id="remote-desktop">Remote Desktop</button>
+    <hr>
+
+    <!-- Disks -->
+    <details>
+
+        <summary>
+            Disks
+        </summary>
+        <table id="disks">
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Free Space</th>
+                <th>Size</th>
+                <th>Percent Free</th>
+            </tr>
+        </table>
+    </details>
+
+    <!-- Printers -->
+    <details>
+        <summary>
+            Printers
+        </summary>
+        <table id="printers">
+            <tr>
+                <th>Name</th>
+                <th>Port</th>
+                <th>Driver</th>
+            </tr>
+        </table>
+    </details>
+
+    <!-- Apps -->
+    <details>
+        <summary>
+            Apps
+        </summary>
+        <input type="text" placeholder="filter" id="filter-apps">
+        <table id="apps">
+            <tr>
+                <th>Name</th>
+                <th>Vendor</th>
+                <th>Version</th>
+            </tr>
+        </table>
+    </details>
+
+    <!-- Environment Variables -->
+    <details>
+        <summary>
+            Environment Variables
+        </summary>
+        <table id="environment-vars">
+            <tr>
+                <th>Name</th>
+                <th>Value</th>
+                <th>UserName</th>
+                <th>Status</th>
+            </tr>
+        </table>
+    </details>
+
+    <!-- Network Adapters -->
+    <details>
+        <summary>
+            Network Adapters
+        </summary>
+        <table id="network-adapters">
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>AdapterType</th>
+                <th>Status</th>
+                <th>MAC Address</th>
+            </tr>
+        </table>
+    </details>
+
+    <!-- Processes -->
+    <details>
+        <summary>
+            Processes
+        </summary>
+        <table id="processes">
+            <tr>
+                <th>Name</th>
+                <th>Process ID</th>
+                <th>Working Set</th>
+            </tr>
+        </table>
+    </details>
+
+    <!-- User Profiles -->
+    <details>
+        <summary>
+            User Profiles
+        </summary>
+        <table id="user-profiles">
+            <tr>
+                <th>Name</th>
+                <th>Local Path</th>
+                <th>Last Login</th>
+            </tr>
+        </table>
+    </details>
+
+    <!-- Services -->
+    <details>
+        <summary>
+            Services
+        </summary>
+        <table id="services">
+            <tr>
+                <th>Caption</th>
+                <th>Name</th>
+                <th>StartMode</th>
+                <th>State</th>
+                <th>Description</th>
+            </tr>
+        </table>
+    </details>
+
+    <!-- Startup Commands -->
+    <details>
+        <summary>
+            Startup Command
+        </summary>
+        <table id="startup-commands">
+            <tr>
+                <th>Caption</th>
+                <th>Command</th>
+                <th>Location</th>
+                <th>User</th>
+            </tr>
+        </table>
+    </details>
+
+    <!-- Processor -->
+    <details>
+        <summary>
+            Processor
+        </summary>
+        <table id="processor">
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Address Width</th>
+                <th>Load Percentage</th>
+            </tr>
+        </table>
+    </details>
+
+    <!-- Shares -->
+    <details>
+        <summary>
+            Shares
+        </summary>
+        <table id="shares">
+            <tr>
+                <th>Caption</th>
+                <th>Name</th>
+                <th>Path</th>
+            </tr>
+        </table>
+    </details>
+
+    <!-- Hotfixes -->
+    <details>
+        <summary>
+            Hotfixes
+        </summary>
+        <table id="hotfixes">
+            <tr>
+                <th>Caption</th>
+                <th>Description</th>
+                <th>ID</th>
+                <th>Install Date</th>
+            </tr>
+        </table>
+    </details>
+    <script>
+        require('./js/details.js');
+    </script>
+</body>
+
+</html>

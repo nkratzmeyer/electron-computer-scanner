@@ -1,0 +1,50 @@
+#computer-details {
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 2px 5px;
+    font-weight: bold;
+  }
+  
+  table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table td,
+  table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #666;
+  }
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    /* background-color: #4CAF50; */
+    color: white;
+  }
+  
+  details {
+    margin: 15px 5px;
+  }
+  
+  summary {
+    font-size: 28px;
+    background: #333;
+  }
+  
+  .warn {
+    background-color: red;
+  }
+  
+  .info-item {
+    max-width: 80%;
+    margin: 2px auto;
+    display: flex;
+    justify-content: space-between;
+  }
